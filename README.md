@@ -8,16 +8,16 @@ Arabic calligraphy represents text in a beautifull visual manner. Unfortunately,
 
 TODO:
 
-Dataset
-. Google Scrapper
-. Find Keywords
-. Image processing
+Dataset\
+. Google Scrapper\
+. Find Keywords\
+. Image processing\
 
-Training
-. Dataloader
-. Trainer
-. Architecture
-. Optimizing
+Training\
+. Dataloader\ 
+. Trainer\
+. Architecture\
+. Optimizing\
 
 Let's see where this is heading...
 
