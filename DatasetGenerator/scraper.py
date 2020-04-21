@@ -6,10 +6,12 @@
 import os
 import requests
 
+import DatasetGenerator.utils as utils
+
 
 # settings:
 GOOGLE_URL = 'https://www.google.com/search?site=&tbm=isch&source=hp&biw=1873&bih=990&&q='
-PATH_OUT = '../data_calligraphy'
+PATH_OUT = '../data/data_calligraphy'
 
 USER_HEADER = {
     'User-Agent':
@@ -56,7 +58,7 @@ def create_set(keywords, amount=10):
     amount: amount of images for each keyword
     path_out: path to the output folder
     """
-    create_folder(PATH_OUT)
+    utils.create_folder(PATH_OUT)
 
     idx = 0
     for keyword in keywords:
@@ -155,12 +157,6 @@ def google_url(keyword):
 
     url = GOOGLE_URL + keyword
     return url
-
-
-def create_folder(path_out):
-    """ Creates output folder (path_out) if it does not exist. """
-    if not os.path.exists(path_out):
-        os.mkdir(path_out)
 
 
 if __name__ == '__main__':
