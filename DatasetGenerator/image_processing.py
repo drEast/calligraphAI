@@ -11,7 +11,7 @@ import os
 import cv2 as cv
 import numpy as np
 
-import DatasetGenerator.utils as utils
+import utils as utils
 
 PATH_IN = '../data_calligraphy/data'
 PATH_OUT = '../data_calligraphy/processed'

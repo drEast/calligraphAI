@@ -2,7 +2,7 @@ import os
 import cv2 as cv
 
 
-def create_folder(path_out):
+def create_folder(path_out, purge=False):
     """ Creates output folder (path_out) if it does not exist. """
     folders = path_out.split('/')
 

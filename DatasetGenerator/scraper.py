@@ -6,8 +6,7 @@
 import os
 import requests
 
-import DatasetGenerator.utils as utils
-
+import utils as utils
 
 # settings:
 GOOGLE_URL = 'https://www.google.com/search?site=&tbm=isch&source=hp&biw=1873&bih=990&&q='
