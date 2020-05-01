@@ -25,7 +25,7 @@ def process_images(size=(640, 480)):
     for idx, img_name in enumerate(images):
         if idx % 100 == 0:
             print(str(idx) + '/' + str(len(images)))
-        img = utils.read_image(PATH_IN, img_name)
+        img = read_image(PATH_IN, img_name)
         if img is None:
             continue
         img_processed = convert_image(img, size)
@@ -98,6 +98,12 @@ def save_image(img, name):
     """ Store an image as file. """
     path_img = os.path.join(PATH_OUT, name)
     cv.imwrite(path_img, img)
+
+
+def read_image(path, img_name):
+    """ Load an image by name"""
+    img_path = os.path.join(path, img_name)
+    return cv.imread(img_path)
 
 
 if __name__ == '__main__':
